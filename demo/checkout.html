@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project1</title>
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <header class="checkout-header">
+        <div class="checkout-header__wrap wrap">
+            <a href="#" class="logo">logo</a>
+            <div>
+                <a href="#">Do you need help?</a>
+                <p>+49 (0) 800 724 1083</p>
+            </div>
+        </div>
+    </header>
+    <!-- /.checkout-header -->
+    <main>
+        <section class="breadcrumbs">
+            <div class="breadcrumbs__wrap wrap checkout-breadcrumbs">
+                <span class="breadcrumbs-back"><a href="#"><i class="fas fa-long-arrow-alt-left"></i> Weiter shoppen</a></span> <span class="breadcrumbs-center"><i class="fab fa-expeditedssl"></i> Secure Checkout pages</span>
+            </div>
+        </section>
+        <!-- /.breadcrumbs -->
+        <section class="payment">
+            <div class="payment__wrap wrap">
+                <div class="grid-container">
+                    <div class="row">
+                        <div class="recepient col-md-6 col-xl">
+                            <div class="recepient__form">
+                                <h2 class="recepient__form-title">1. Recipient Information</h2>
+                                <form>
+                                    <div>
+                                        <input class="form-control" type="email" placeholder="Email *" required>
+                                        <i class="fas fa-check"></i>
+                                        <i class="fas fa-exclamation"></i>
+                                        <span class="floating-label-recepient">Email <span>*</span></span>
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" minlength="4" placeholder="First Name *" required>
+                                        <i class="fas fa-check"></i>
+                                        <i class="fas fa-exclamation"></i>
+                                        <span class="floating-label-recepient">First Name <span>*</span></span>
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" minlength="8" placeholder="Last Name *" required>
+                                        <i class="fas fa-check"></i>
+                                        <i class="fas fa-exclamation"></i>
+                                        <span class="floating-label-recepient">Last Name <span>*</span></span>
+                                    </div>
+                                    <div>
+                                        <input class="form-control" type="text" minlength="9" placeholder="Address *" required>
+                                        <i class="fas fa-check"></i>
+                                        <i class="fas fa-exclamation"></i>
+                                        <span class="floating-label-recepient">Address <span>*</span></span>
+                                    </div>
+                                    <div class="zip-city">
+                                        <div>
+                                            <input class="form-control zip-form" type="text" maxlength="5" placeholder="Zip, postal code *" required>
+                                            <i class="fas fa-check"></i>
+                                            <i class="fas fa-exclamation"></i>
+                                            <span class="floating-label-recepient">Zip, postal code <span>*</span></span>
+                                        </div>
+                                        <div>
+                                            <input class="form-control" type="text" minlength="4" placeholder="City *" required>
+                                            <i class="fas fa-check"></i>
+                                            <i class="fas fa-exclamation"></i>
+                                            <span class="floating-label-recepient">City <span>*</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="custom-select">
+                                        <select required>
+                                            <option value="">Country *</option>
+                                            <option value="Portugal">Portugal</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="China">China</option>
+                                            <option value="France">France</option>
+                                        </select>
+                                        <span class="floating-label-recepient floating-country"> <span>*</span></span>
+                                    </div>
+                                    <div>
+                                        <input class="form-control phone-form" type="tel" placeholder="Phone number *" required>
+                                        <i class="fas fa-check"></i>
+                                        <i class="fas fa-exclamation"></i>
+                                        <span class="floating-label-recepient">Phone number <span>*</span></span>
+                                    </div>
+                                </form>
+                                <div class="recepient__form-bottom">
+                                <p><span>*</span> Fields marked with an asterisk are required</p>
+                                <div class="check">
+                                    <label class="label-check">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        Click here, if the billing and shipping address are different
+                                    </label>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- /.recepient__form -->
+                        </div>
+                        <!-- /.recepient -->
+                        <div class="shipping-payment col-md-6 col-xl">
+                            <div class="shipping">
+                                <h2 class="shipping__form-title">2. Shipping Methods</h2>
+                                <div class="shipping__form">
+                                    <label class="label-container">
+                                        <input type="radio" name="price" checked>
+                                        <span class="radio-checkmark"></span>
+                                        <span class="label">€0.00 Regular Shipping (8-13 business days)</span>
+                                    </label>
+                                    <label class="label-container">
+                                        <input type="radio" name="price">
+                                        <span class="radio-checkmark"></span>
+                                        <span class="label">€14.90 Express Shipping (4-7 business days)</span>
+                                    </label>
+                                    <label class="label-container">
+                                        <input type="radio" name="price">
+                                        <span class="radio-checkmark"></span>
+                                        <span class="label">€13.90 Registered mail (7-14 business days)</span>
+                                    </label>
+                                    <label class="label-container">
+                                        <input type="radio" name="price">
+                                        <span class="radio-checkmark"></span>
+                                        <span class="label">€5.50 Shipping to PO Box (6-12 business days)</span>
+                                    </label>
+                                </div>
+                                <!-- /.shipping__form -->
+                            </div>
+                            <!-- /.shipping -->
+                            <div class="payment__card">
+                                <h2 class="payment__form-title">3. Payment Methods</h2>
+                                <div class="card__info-form">
+                                    <div class="card__info-top">
+                                        <div>
+                                            <label class="label-container">
+                                                <input type="radio" name="price" checked>
+                                                <span class="radio-checkmark"></span>
+                                                <span class="label">Credit Card</span>
+                                            </label>
+                                            <label class="label-container">
+                                                <input type="radio" name="price">
+                                                <span class="radio-checkmark"></span>
+                                                <span class="label">Wire Transfer</span>
+                                            </label>
+                                        </div>
+                                        <div class="card__options">
+                                            <span class="card-icon">
+                                                <i class="fab fa-cc-mastercard"></i>
+                                            </span>
+                                            <span class="card-icon active" id="default">
+                                                <i class="fab fa-cc-visa"></i>
+                                            </span>
+                                            <span class="card-icon">
+                                                <i class="fab fa-cc-jcb"></i>
+                                            </span>
+                                            <span class="card-icon">
+                                                <i class="fab fa-cc-amex"></i>
+                                            </span>
+                                            <span class="card-icon">
+                                                <i class="fab fa-cc-discover"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div>
+                                            <input type="tel" class="card-form-control cc-number"  maxlength="19" minlength="16" required>
+                                            <span class="card-icon-sm">
+                                                <i class="fab fa-cc-visa"></i>
+                                            </span>
+                                            <span class="floating-label">Card number</span>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <input type="tel" class="card-form-control cc-expires" placeholder="Year" maxlength="2">
+                                                <input type="tel" class="card-form-control cc-expires" placeholder="Month" maxlength="2">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="tel" class="card-form-control cc-cvv" maxlength="4" placeholder="CVV">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.card__info-form -->
+                            </div>
+                            <!-- /.payment -->
+                        </div>
+                        <div class="total col-md-6 col-xl">
+                            <h2 class="total__form-title">4. Total</h2>
+                            <div class="total__block">
+                                <div class="total__top">
+                                    <div>
+                                        <img src="img/pills1-mini.png" alt="">
+                                        <div>
+                                            <p>Cialis Original 20mg</p>
+                                            <span>4 + 2 Pills</span>
+                                        </div>
+                                        <p>€69.00</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/pills2-mini.png" alt="">
+                                        <div>
+                                            <p>Levitra Original 20mg</p>
+                                            <span>4 + 2 Pills</span>
+                                        </div>
+                                        <p>€69.00</p>
+                                    </div>
+                                </div>
+                                <div class="total__bottom">
+                                    <div>
+                                        <p class="total-grey">Registered mail (7-14 business days)</p>
+                                        <p>€13.90</p>
+                                    </div>
+                                    <div>
+                                        <p class="total-amount">Total amount</p>
+                                        <p>€128.90</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="total__btn">Bestellung abschliessen</a>
+                        </div>
+                        <!-- /.total -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.payment -->
+        <section class="checkout__footer wrap">
+            <div class="checkout-footer__wrap">
+                <p>Our Consultants will be happy to provide you with any information. We invite you to also read the bookmark <a href="#">How to buy?</a></p>
+                <a href="#"><i class="fas fa-mobile"></i> +49 (0) 800 724 1083 <span>(all landline calls are free of charge)</span></a>
+                <a href="#"><i class="fas fa-envelope"></i> namesait@test.com</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Frequently Asked Questions »</a>
+            </div>
+        </section>
+        <!-- /.checkout__footer -->
+    </main>
+    <footer class="footer">
+        <div class="footer__wrap wrap">
+            <div class="grid-container">
+                <div class="row">
+                    <div class="footer__element col-lg col-md-3 col-sm-6">
+                        <h3 class="footer__title">Kategorie</h3>
+                        <p><a href="#">Potenzmittel</a></p>
+                        <p><a href="#">Sexualgesundheit</a></p>
+                        <p><a href="#">Asthma</a></p>
+                        <p><a href="#">Diabetes</a></p>
+                        <p><a href="#">Hoher Cholesterinspiegel</a></p>
+                        <p><a href="#">Hirsutismus</a></p>
+                    </div>
+                    <div class="footer__element col-lg col-md-3 col-sm-6">
+                        <p><a href="#">Akne</a></p>
+                        <p><a href="#">Fettleibigkeit</a></p>
+                        <p><a href="#">Antibabypille</a></p>
+                        <p><a href="#">Raucherentwöhnung</a></p>
+                        <p><a href="#">Bluthochdruck</a></p>
+                        <p><a href="#">Andere Medikamente</a></p>
+                    </div>
+                    <div class="footer__element col-lg col-md-3 col-sm-6">
+                        <h3 class="footer__title">Navigation</h3>
+                        <p><a href="#">Startseite</a></p>
+                        <p><a href="#">Über uns</a></p>
+                        <p><a href="#">Warenkorb</a></p>
+                        <p><a href="#">Lieferkonditionen</a></p>
+                        <p><a href="#">Impressum</a></p>
+                        <p><a href="#">So bestellen Sie</a></p>
+                    </div>
+                    <div class="footer__element footer__element--options col-lg col-md-3 col-sm-6 col-12">
+                        <div>
+                            <img src="img/logo1.png" alt="">
+                            <img src="img/logo2.png" alt="">
+                            <img src="img/logo3.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/logo4.png" alt="">
+                            <img src="img/logo5.png" alt="">
+                            <img src="img/logo6.png" alt="">
+                            <img src="img/logo7.png" alt="">
+                            <img src="img/logo8.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/logo9.png" alt="">
+                            <img src="img/logo10.png" alt="">
+                            <img src="img/logo11.png" alt="">
+                            <img src="img/logo12.png" alt="">
+                            <img src="img/logo13.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.footer -->
+    <section class="copyright">
+        <h2 class="copyright__title-hide">Copyright</h2>
+        <p>Copyright © 2019 tv-gesundheit.at All rights reserved</p>
+    </section>
+    <!-- /.copyright -->
+</div>
+<!-- /.container -->
+<script src="js/common.js"></script>
+</body>
+</html>
